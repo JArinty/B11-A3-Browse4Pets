@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B11-A3-Browse4Pet</title>
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +58,7 @@ header section {
 }
       
 
-      @media (max-width: 640px) {
+      @media (max-width:740px) {
         /* For mobile devices */
         header nav h1 {
            display: none;
@@ -67,11 +67,25 @@ header section {
         main section div .bird{
           display: none;
         }
-        footer div .last{
+        main section .last-part{
           display: flex;
           flex-direction: column;
+          height: auto;
+          box-sizing: border-box;
+          align-items: center;
+          justify-content:center;
         }
-      }
+        main section .last-part img{
+          width:200px;
+        }
+        main section .last-part div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        }
+      
 
 </style>
   </head>
@@ -137,10 +151,10 @@ header section {
       <!-- Banner -->
       <section class="flex flex-col items-center">
         <div class="mt-14 space-y-3">
-          <h1 class="adlam-display-regular text-4xl">Pamper Your Pet, Because They Deserve <br> the Bes</h1>
+          <h1 class="adlam-display-regular text-4xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
           <p class="relative z-10">
             Discover a world of treats, toys, and essentials <br> handpicked for your
-            furry friends. Shop now and make tails wag with joy!
+            furry friends. <br> Shop now and make tails wag with joy!
           </p>
           <button class="bg-yellow-400 p-4 mt-4 rounded-md relative z-10">Find a pet</button>
           <img src="./c1-assets/cat-big.png" alt="" class="w-[900px] bottom-[172px] relative">
@@ -205,7 +219,7 @@ header section {
 
       <!--Trending Pet Products -->
       <section class="m-auto  py-12 bg-[#FFF9F4] mb-80 container">
-        <h1 class="mt-8 text-2xl ">
+        <h1 class="mt-8 text-4xl adlam-display-regular ">
           Trending Pet Products
         </h1>
         <!-- Cards -->
@@ -359,7 +373,7 @@ header section {
 
        <!-- Get Pawsome News! -->
       <section class=" mx-auto ">
-        <div class="max-w-4xl h-[450px] mx-auto flex justify-evenly items-center bg-[#FFF9F4] relative top-80 ">
+        <div class="last-part max-w-4xl h-[450px] mx-auto flex justify-evenly items-center bg-[#FFF9F4] relative top-80 ">
         <div>
           <img src="./c1-assets/cute-pet-mid.png" alt="">
         </div>
@@ -375,9 +389,9 @@ header section {
 
 
     <footer class="bg-[#FFDC2680] mx-auto lg:h-[500px] h-[650px] mt-20">
-      <div class="last max-w-4xl  mx-auto mt-40  flex flex-col lg:flex-row  lg:justify-evenly justify-start lg:items-center relative top-64">
+      <div class=" max-w-4xl  mx-auto mt-40  flex flex-col lg:flex-row  lg:justify-evenly justify-start lg:items-center relative top-64">
       <div>
-        <div class="</div>flex items-center mb-2">
+        <div class="flex items-center mb-2">
           <img src="./c1-assets/logo-footer.png" alt="">
           <h1 class="adlam-display-regular text-2xl">Browse<span class="text-yellow-400">4</span>Pets</h1>
         </div>
